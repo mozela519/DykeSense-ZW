@@ -1,0 +1,45 @@
+@import "tailwindcss";
+@import "leaflet/dist/leaflet.css";
+
+@layer base {
+  body {
+    font-family: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+    background-color: #071629;
+    color: #f1f5f9;
+  }
+}
+
+/* Custom scrollbars for data tables and grids */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: #08182b;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #1e3a5f;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #1B998B;
+}
+
+/* Clean printing styles for Target Card physical export */
+@media print {
+  header, nav, footer, button {
+    display: none !important;
+  }
+  body, main {
+    background: white !important;
+    color: black !important;
+  }
+  .bg-\[\#08182b\], .bg-\[\#0e243d\], .bg-\[\#05111f\] {
+    background: white !important;
+    color: black !important;
+    border: 1px solid #ccc !important;
+  }
+}

@@ -1,0 +1,6 @@
+{
+  "name": "DykeSense-ZW",
+  "description": "Affordable Chrome Exploration Platform for ASM and Junior Miners on the Great Dyke, Zimbabwe. Combines satellite screening, ground magnetometer surveys, AI magnetic inversion, chain-of-custody assays, and plain-language target cards.",
+  "requestFramePermissions": ["geolocation"],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
